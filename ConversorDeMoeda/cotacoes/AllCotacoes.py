@@ -8,7 +8,6 @@ def converte_moedas(valor, moeda_inicial, moeda_cambio):
         moeda_inicial = float(moeda_inicial)
         moeda_cambio = float(moeda_cambio)
         conversao = (valor*moeda_inicial) / moeda_cambio
-        print( round(conversao, 5))
         return round(conversao, 5)
 
 # Data Atual
