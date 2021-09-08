@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConversorDeMoedas</class>
+ <widget class="QMainWindow" name="ConversorDeMoedas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Conversor de Moedas </string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(1, 166, 255);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbTitulo">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>70</y>
+      <width>292</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Conversor de Moedas</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbValor">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>150</y>
+      <width>101</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Quantidade:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbDe">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>230</y>
+      <width>31</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>De:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbPara">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>310</y>
+      <width>51</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Para:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>130</y>
+      <width>671</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputValor">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbMoedaInicial">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>270</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Real-BRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dólar-USD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Euro-EUR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bitcoin-BTC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dólar Canadense-CAD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Libra Esterlina-GBP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Peso Argentino-ARS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Litecoin-LTC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Iene Japonês-JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Franco Suíço-CHF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dólar Australiano-AUD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yuan Chinês-CNY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Novo Shekel Israelense-ILS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ethereum-ETH</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ripple-XRP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dogecoin-DOGE</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="cbMoedaCambio">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>350</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Dólar-USD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Euro-EUR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Real-BRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bitcoin-BTC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dólar Canadense-CAD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Libra Esterlina-GBP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Peso Argentino-ARS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Litecoin-LTC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Iene Japonês-JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Franco Suíço-CHF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dólar Australiano-AUD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yuan Chinês-CNY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Novo Shekel Israelense-ILS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ethereum-ETH</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ripple-XRP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dogecoin-DOGE</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lbResultadoTxt">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>460</y>
+      <width>111</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Resultados:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbResultado">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>510</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbData">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>580</y>
+      <width>411</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConverter">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>410</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(1, 166, 255);
+background-color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Converter</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
